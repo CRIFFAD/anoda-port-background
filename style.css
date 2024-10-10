@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(./img/peter-broomfield-m3m-lnR90uM-unsplash.jpg);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+h3 {
+    color: #fff;
+}
+
+nav ul li a {
+  color: #fff;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  transition: 0.5s;
+  bottom: 0;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.btn {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn:hover {
+  background: transparent;
+  border-color: #ffffff;
+  color: #fff;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: inherit;
+  width: 70%;
+}
+
+.content h1 span {
+  color: #ff0000;
+}
+
+.content p {
+  width: 55%;
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large screens (1200px and up) */
+@media screen and (min-width: 1200px) {
+  /* Existing styles work well for large screens */
+}
+
+/* Medium screens (992px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  nav {
+    padding: 20px 50px;
+  }
+  
+  .content h1 {
+    font-size: 60px;
+    width: 80%;
+  }
+  
+  .content p {
+    width: 70%;
+    font-size: 16px;
+  }
+}
+
+/* Small screens (768px to 991px) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  nav {
+    padding: 20px 30px;
+  }
+  
+  nav ul li {
+    padding: 10px 15px;
+  }
+  
+  .content h1 {
+    font-size: 48px;
+    width: 90%;
+  }
+  
+  .content p {
+    width: 80%;
+    font-size: 15px;
+  }
+  
+  .btn {
+    font-size: 14px;
+  }
+}
+
+/* Extra small screens (mobile devices, 767px and down) */
+@media screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  nav ul {
+    margin-top: 20px;
+  }
+  
+  nav ul li {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 8px 8px;
+  }
+  
+  .content {
+    top: 25%;
+    left: 5%;
+    right: 5%;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    width: 100%;
+  }
+  
+  .content p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Very small screens (480px and down) */
+@media screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 28px;
+  }
+  
+  .content p {
+    font-size: 13px;
+  }
+  
+  .btn {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+}
+
+/* Extra small screens (320px and down) */
+@media screen and (max-width: 320px) {
+  nav {
+    padding: 15px;
+  }
+  
+  nav ul li {
+    padding: 8px 0;
+  }
+  
+  .content h1 {
+    font-size: 24px;
+  }
+  
+  .content p {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    font-size: 50px;
+    padding: 5px 5px;
+  }
+}
